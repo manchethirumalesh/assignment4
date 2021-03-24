@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment4';
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  text : any
+
+  receiveMessage($event: any){
+
+    this.text = $event
+
+  }
+
 }
